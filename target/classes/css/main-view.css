@@ -1,0 +1,39 @@
+.background{
+    -fx-background-color: -fx-primary-background;
+}
+
+.title{
+    -fx-font-size: 40px;
+    -fx-text-fill: -fx-primary-blue;
+}
+
+.subheading{
+    -fx-font-size: 30px;
+    -fx-text-fill: -fx-primary-blue;
+}
+
+.text{
+    -fx-text-fill: -fx-primary-blue;
+}
+
+.convert-button{
+    -fx-text-fill: -fx-primary-blue;
+    -fx-background-color: #f7cac9;
+    -fx-border-color: #eb7e7c;
+    -fx-background-radius: 0;
+}
+
+.convert-button:hover{
+    -fx-background-color: #f1a4a3;
+}
+
+.count-button{
+    -fx-text-fill: -fx-primary-blue;
+    -fx-background-color: #d9faca;
+    -fx-border-color: #5b8c46;
+    -fx-background-radius: 0;
+}
+
+.count-button:hover{
+    -fx-background-color: #92f069;
+}

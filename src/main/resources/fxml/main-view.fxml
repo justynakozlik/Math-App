@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+       <VBox alignment="CENTER" prefHeight="150.0" spacing="30.0">
+         <children>
+            <Label styleClass="title" text="Welcome in Count&amp;Convert App!">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label styleClass="subheading" text="Choose what you want to do">
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin></VBox>
+   </top>
+   <center>
+      <HBox prefHeight="500.0" prefWidth="700.0" spacing="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="countButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" styleClass="count-button" text="Count">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button id="convertButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" styleClass="convert-button" text="Convert">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets left="100.0" top="40.0" />
+         </BorderPane.margin></HBox>
+   </center>
+   <stylesheets>
+      <URL value="@../css/global-colors.css" />
+      <URL value="@../css/main-view.css" />
+   </stylesheets>
+</BorderPane>
