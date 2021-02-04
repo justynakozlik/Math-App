@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="mainViewBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MainViewController">
    <top>
        <VBox alignment="CENTER" prefHeight="150.0" spacing="30.0">
          <children>
@@ -28,7 +28,7 @@
    <center>
       <HBox prefHeight="500.0" prefWidth="700.0" spacing="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button id="countButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" styleClass="count-button" text="Count">
+            <Button fx:id="countButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" styleClass="count-button" text="Count">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
@@ -36,7 +36,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button id="convertButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" styleClass="convert-button" text="Convert">
+            <Button fx:id="convertButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" styleClass="convert-button" text="Convert">
                <font>
                   <Font size="24.0" />
                </font></Button>
