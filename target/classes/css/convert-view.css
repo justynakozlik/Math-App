@@ -1,0 +1,23 @@
+.background{
+    -fx-background-color: -fx-primary-background;
+}
+
+.title{
+    -fx-font-size: 40px;
+    -fx-text-fill: -fx-primary-blue;
+}
+
+.text{
+    -fx-text-fill: -fx-primary-blue;
+}
+
+.button{
+    -fx-text-fill: -fx-primary-blue;
+    -fx-background-color: #ed9f18;
+    -fx-border-color: #c78006;
+    -fx-background-radius: 0;
+}
+
+.button:hover{
+    -fx-background-color: #f0a930;
+}
