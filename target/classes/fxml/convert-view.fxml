@@ -7,9 +7,9 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ConvertViewController">
    <top>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <Pane prefHeight="135.0" prefWidth="700.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" layoutX="120.0" layoutY="64.0" styleClass="title" text="Select the units to convert" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="129.0" layoutY="39.0" styleClass="title" text="Select the units to convert" textAlignment="CENTER" />
          </children>
       </Pane>
    </top>
@@ -22,6 +22,7 @@
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Button fx:id="cToFButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="300.0" text="Celsius to Fahrenheit" GridPane.halignment="CENTER">
@@ -40,6 +41,16 @@
                </font>
             </Button>
             <Button fx:id="kToCButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="300.0" text="Kelwin to Celsius" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="kToFButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="300.0" text="Kelwin to Fahrenheit" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="fToKButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="300.0" text="Fahrenheit to Kelwin" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="23.0" />
                </font>

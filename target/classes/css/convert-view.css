@@ -13,11 +13,11 @@
 
 .button{
     -fx-text-fill: -fx-primary-blue;
-    -fx-background-color: #ed9f18;
-    -fx-border-color: #c78006;
+    -fx-background-color: -fx-primary-orange;
+    -fx-border-color: -fx-border-orange;
     -fx-background-radius: 0;
 }
 
 .button:hover{
-    -fx-background-color: #f0a930;
+    -fx-background-color: -fx-secondary-orange;
 }

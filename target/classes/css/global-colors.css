@@ -1,4 +1,12 @@
 *{
     -fx-primary-blue: #00008B;
     -fx-primary-background: #FFEBCD;
+    -fx-primary-red: #F23022;
+    -fx-secondary-red: #FF4A3C;
+    -fx-primary-orange: #ed9f18;
+    -fx-secondary-orange: #f0a930;
+    -fx-border-orange: #c78006;
+    -fx-primary-green: #74e05c;
+    -fx-secondary-green: #4bc730;
+    -fx-border-green: #278212;
 }

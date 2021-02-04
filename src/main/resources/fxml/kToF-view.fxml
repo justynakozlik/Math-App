@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.KToCViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.KToFViewController">
     <stylesheets>
         <URL value="@../css/xToY-view.css" />
         <URL value="@../css/global-colors.css" />
@@ -39,7 +39,7 @@
                         <Insets left="100.0" right="100.0" />
                     </VBox.margin></TextField>
                 <Button fx:id="convertButton" mnemonicParsing="false" styleClass="convert-button" text="Convert" />
-                <Label fx:id="solutionLabel" styleClass="text" text=" K  =       °C   ">
+                <Label fx:id="solutionLabel" styleClass="text" text=" K  =       °F   ">
                     <font>
                         <Font size="15.0" />
                     </font></Label>

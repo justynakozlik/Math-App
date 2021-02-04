@@ -1,0 +1,42 @@
+.background{
+    -fx-background-color: -fx-primary-background;
+}
+
+.text{
+    -fx-text-fill: -fx-primary-blue;
+}
+
+.convert-button{
+    -fx-text-fill: -fx-primary-blue;
+    -fx-background-color: -fx-primary-orange;
+    -fx-border-color: -fx-border-orange;
+    -fx-background-radius: 0;
+}
+
+.convert-button:hover{
+    -fx-background-color: -fx-secondary-orange;
+}
+
+.refresh-button{
+    -fx-text-fill: -fx-primary-blue;
+    -fx-background-color: -fx-primary-green;
+    -fx-border-color: -fx-border-green;
+    -fx-background-radius: 0;
+}
+
+.refresh-button:hover{
+    -fx-background-color: -fx-secondary-green;
+}
+
+
+.exit-button{
+    -fx-background-color: -fx-primary-red;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-alignment: center;
+}
+
+.exit-button:hover{
+    -fx-background-color: -fx-secondary-red;
+}

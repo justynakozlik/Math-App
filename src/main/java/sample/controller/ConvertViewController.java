@@ -22,6 +22,10 @@ public class ConvertViewController implements Initializable {
     private Button cToKButton;
     @FXML
     private Button kToCButton;
+    @FXML
+    private Button kToFButton;
+    @FXML
+    private Button fToKButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -29,6 +33,8 @@ public class ConvertViewController implements Initializable {
         initializeFToCButton();
         initializeCToKButton();
         initializeKToCButton();
+        initializeKToFButton();
+        initializeFToKButton();
     }
 
     private void initializeCToFButton() {
@@ -52,6 +58,18 @@ public class ConvertViewController implements Initializable {
     private void initializeKToCButton() {
         kToCButton.setOnAction((x) -> {
             createStage("/fxml/kToC-view.fxml");
+        });
+    }
+
+    private void initializeKToFButton() {
+        kToFButton.setOnAction((x) -> {
+            createStage("/fxml/kToF-view.fxml");
+        });
+    }
+
+    private void initializeFToKButton() {
+        fToKButton.setOnAction((x) -> {
+            createStage("/fxml/fToK-view.fxml");
         });
     }
 
