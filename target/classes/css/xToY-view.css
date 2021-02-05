@@ -1,5 +1,7 @@
 .background{
     -fx-background-color: -fx-primary-background;
+    -fx-border-color: -fx-border-orange;
+    -fx-border-width: 5px;
 }
 
 .text{

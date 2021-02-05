@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -78,6 +79,7 @@ public class ConvertViewController implements Initializable {
             Stage stage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource(resource));
             stage.setScene(new Scene(root, 500, 300));
+            stage.initStyle(StageStyle.UNDECORATED);
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException("Can't load this file");
