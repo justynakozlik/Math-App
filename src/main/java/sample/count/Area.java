@@ -4,7 +4,7 @@ public class Area {
 
     public double circleArea(double r){
         double power = Math.pow(r,2);
-        return Math.PI*power;
+        return Math.PI * power;
     }
 
     public double triangleArea(double a, double h){
