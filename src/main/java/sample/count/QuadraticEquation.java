@@ -12,6 +12,8 @@ public class QuadraticEquation {
 
         double rootOfDelta = Math.sqrt(delta);
 
+        convert = new Convert();
+
         if (delta > 0) {
             double k = 2 * a;
             double x1 = ((-b - rootOfDelta) / k);
@@ -36,3 +38,5 @@ public class QuadraticEquation {
         }
     }
 }
+
+
