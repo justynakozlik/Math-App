@@ -1,0 +1,31 @@
+.background{
+    -fx-background-color: -fx-primary-background;
+    -fx-border-color: -fx-border-orange;
+}
+
+.text{
+    -fx-text-fill: -fx-primary-blue;
+}
+
+.count-button{
+    -fx-text-fill: -fx-primary-blue;
+    -fx-background-color: -fx-primary-orange;
+    -fx-border-color: -fx-border-orange;
+    -fx-background-radius: 0;
+}
+
+.count-button:hover{
+    -fx-background-color: -fx-secondary-orange;
+}
+
+.refresh-button{
+    -fx-text-fill: -fx-primary-blue;
+    -fx-background-color: -fx-primary-green;
+    -fx-border-color: -fx-border-green;
+    -fx-background-radius: 0;
+}
+
+.refresh-button:hover{
+    -fx-background-color: -fx-secondary-green;
+}
+
