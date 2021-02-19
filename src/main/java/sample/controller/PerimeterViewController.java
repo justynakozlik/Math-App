@@ -193,7 +193,6 @@ public class PerimeterViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The perimeter of the figure is " + valueToDisplay + " centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -220,7 +219,6 @@ public class PerimeterViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The perimeter of the figure is " + valueToDisplay + " centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty() || text3.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -245,7 +243,6 @@ public class PerimeterViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The perimeter of the figure is " + valueToDisplay + " centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -270,7 +267,6 @@ public class PerimeterViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The perimeter of the figure is " + valueToDisplay + " centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -293,7 +289,6 @@ public class PerimeterViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The perimeter of the figure is " + valueToDisplay + " centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -316,7 +311,6 @@ public class PerimeterViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The perimeter of the figure is " + valueToDisplay + " centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -345,7 +339,6 @@ public class PerimeterViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The perimeter of the figure is " + valueToDisplay + " centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty() || text3.isEmpty() || text4.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -354,7 +347,7 @@ public class PerimeterViewController implements Initializable {
             }
         }
     }
-    
+
     private List<Figures> getFigures() {
         Figures[] values = Figures.values();
         List<Figures> figures = Arrays.asList(values);

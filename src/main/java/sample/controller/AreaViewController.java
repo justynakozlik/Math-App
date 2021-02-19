@@ -79,7 +79,6 @@ public class AreaViewController implements Initializable {
         });
     }
 
-
     private void refresh() {
 
         areaChoiceBox.setValue(null);
@@ -185,7 +184,6 @@ public class AreaViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -210,7 +208,6 @@ public class AreaViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -235,7 +232,6 @@ public class AreaViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -260,7 +256,6 @@ public class AreaViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -285,7 +280,6 @@ public class AreaViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -308,7 +302,6 @@ public class AreaViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text.isEmpty()) {
                 countAlerts.createEmptyStringAlert();
@@ -335,7 +328,6 @@ public class AreaViewController implements Initializable {
                 String valueToDisplay = convert.customFormat("###.###", solution);
                 solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
             }
-
         } catch (NumberFormatException ex) {
             if (text1.isEmpty() || text2.isEmpty() || text3.isEmpty()) {
                 countAlerts.createEmptyStringAlert();

@@ -4,6 +4,10 @@ import javafx.scene.control.Alert;
 
 public class CountAlerts {
 
+    public void createNoSolidAlert(){
+        alertPattern("Information", "No solid was selected", "Select solid to count.");
+    }
+
     public void createNoFigureAlert(){
         alertPattern("Information", "No figure was selected", "Select figure to count.");
     }
