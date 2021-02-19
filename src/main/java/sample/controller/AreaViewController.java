@@ -67,6 +67,9 @@ public class AreaViewController implements Initializable {
 
 
     private void initializeCountButton() {
+        countButton.setOnAction((x) -> {
+            count();
+        });
     }
 
 
@@ -144,6 +147,201 @@ public class AreaViewController implements Initializable {
 
             thirdParamTextField.setEditable(false);
 
+        }
+    }
+
+    private void count() {
+        try {
+            if (areaChoiceBox.getSelectionModel().getSelectedItem().toString().equals("CIRCLE")) {
+                circleCount();
+            } else if (areaChoiceBox.getSelectionModel().getSelectedItem().toString().equals("TRIANGLE")) {
+                triangleCount();
+            } else if (areaChoiceBox.getSelectionModel().getSelectedItem().toString().equals("RECTANGLE")) {
+                rectangleCount();
+            } else if (areaChoiceBox.getSelectionModel().getSelectedItem().toString().equals("RHOMBOID")) {
+                rhomboidCount();
+            } else if (areaChoiceBox.getSelectionModel().getSelectedItem().toString().equals("RHOMB")) {
+                rhombCount();
+            } else if (areaChoiceBox.getSelectionModel().getSelectedItem().toString().equals("SQUARE")) {
+                squareCount();
+            } else if (areaChoiceBox.getSelectionModel().getSelectedItem().toString().equals("TRAPEZIUM")) {
+                trapeziumCount();
+            }
+        } catch (NullPointerException ex) {
+            countAlerts.createNoFigureAlert();
+        }
+    }
+
+    private void circleCount() {
+
+        String text = firstParamTextField.getText();
+
+        try {
+            double value = Double.parseDouble(text);
+            if (value < 0) {
+                countAlerts.createNegativeNumberAlert();
+            } else {
+                double solution = area.circleArea(value);
+                String valueToDisplay = convert.customFormat("###.###", solution);
+                solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
+            }
+
+        } catch (NumberFormatException ex) {
+            if (text.isEmpty()) {
+                countAlerts.createEmptyStringAlert();
+            } else {
+                countAlerts.createWrongFormatAlert();
+            }
+        }
+    }
+
+    private void triangleCount() {
+
+        String text1 = firstParamTextField.getText();
+        String text2 = thirdParamTextField.getText();
+
+        try {
+            double value1 = Double.parseDouble(text1);
+            double value2 = Double.parseDouble(text2);
+            if (value1 < 0 || value2 < 0) {
+                countAlerts.createNegativeNumberAlert();
+            } else {
+                double solution = area.triangleArea(value1, value2);
+                String valueToDisplay = convert.customFormat("###.###", solution);
+                solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
+            }
+
+        } catch (NumberFormatException ex) {
+            if (text1.isEmpty() || text2.isEmpty()) {
+                countAlerts.createEmptyStringAlert();
+            } else {
+                countAlerts.createWrongFormatAlert();
+            }
+        }
+    }
+
+    private void rectangleCount() {
+
+        String text1 = firstParamTextField.getText();
+        String text2 = secondParamTextField.getText();
+
+        try {
+            double value1 = Double.parseDouble(text1);
+            double value2 = Double.parseDouble(text2);
+            if (value1 < 0 || value2 < 0) {
+                countAlerts.createNegativeNumberAlert();
+            } else {
+                double solution = area.rectangleArea(value1, value2);
+                String valueToDisplay = convert.customFormat("###.###", solution);
+                solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
+            }
+
+        } catch (NumberFormatException ex) {
+            if (text1.isEmpty() || text2.isEmpty()) {
+                countAlerts.createEmptyStringAlert();
+            } else {
+                countAlerts.createWrongFormatAlert();
+            }
+        }
+    }
+
+    private void rhomboidCount() {
+
+        String text1 = firstParamTextField.getText();
+        String text2 = thirdParamTextField.getText();
+
+        try {
+            double value1 = Double.parseDouble(text1);
+            double value2 = Double.parseDouble(text2);
+            if (value1 < 0 || value2 < 0) {
+                countAlerts.createNegativeNumberAlert();
+            } else {
+                double solution = area.rhomboidArea(value1, value2);
+                String valueToDisplay = convert.customFormat("###.###", solution);
+                solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
+            }
+
+        } catch (NumberFormatException ex) {
+            if (text1.isEmpty() || text2.isEmpty()) {
+                countAlerts.createEmptyStringAlert();
+            } else {
+                countAlerts.createWrongFormatAlert();
+            }
+        }
+    }
+
+    private void rhombCount() {
+
+        String text1 = firstParamTextField.getText();
+        String text2 = secondParamTextField.getText();
+
+        try {
+            double value1 = Double.parseDouble(text1);
+            double value2 = Double.parseDouble(text2);
+            if (value1 < 0 || value2 < 0) {
+                countAlerts.createNegativeNumberAlert();
+            } else {
+                double solution = area.rhombArea(value1, value2);
+                String valueToDisplay = convert.customFormat("###.###", solution);
+                solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
+            }
+
+        } catch (NumberFormatException ex) {
+            if (text1.isEmpty() || text2.isEmpty()) {
+                countAlerts.createEmptyStringAlert();
+            } else {
+                countAlerts.createWrongFormatAlert();
+            }
+        }
+    }
+
+    private void squareCount() {
+
+        String text = firstParamTextField.getText();
+
+        try {
+            double value = Double.parseDouble(text);
+            if (value < 0) {
+                countAlerts.createNegativeNumberAlert();
+            } else {
+                double solution = area.squareArea(value);
+                String valueToDisplay = convert.customFormat("###.###", solution);
+                solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
+            }
+
+        } catch (NumberFormatException ex) {
+            if (text.isEmpty()) {
+                countAlerts.createEmptyStringAlert();
+            } else {
+                countAlerts.createWrongFormatAlert();
+            }
+        }
+    }
+
+    private void trapeziumCount() {
+
+        String text1 = firstParamTextField.getText();
+        String text2 = secondParamTextField.getText();
+        String text3 = thirdParamTextField.getText();
+
+        try {
+            double value1 = Double.parseDouble(text1);
+            double value2 = Double.parseDouble(text2);
+            double value3 = Double.parseDouble(text3);
+            if (value1 < 0 || value2 < 0 || value3 < 0) {
+                countAlerts.createNegativeNumberAlert();
+            } else {
+                double solution = area.trapeziumArea(value1, value2, value3);
+                String valueToDisplay = convert.customFormat("###.###", solution);
+                solutionLabel.setText("The area of the figure is " + valueToDisplay + " square centimeters");
+            }
+
+        } catch (NumberFormatException ex) {
+            if (text1.isEmpty() || text2.isEmpty() || text3.isEmpty()) {
+                countAlerts.createEmptyStringAlert();
+            } else {
+                countAlerts.createWrongFormatAlert();
+            }
         }
     }
 

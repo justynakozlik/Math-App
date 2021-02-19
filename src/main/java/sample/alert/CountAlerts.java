@@ -4,6 +4,10 @@ import javafx.scene.control.Alert;
 
 public class CountAlerts {
 
+    public void createNoFigureAlert(){
+        alertPattern("Information", "No figure was selected", "Select figure to count.");
+    }
+
     public void createNegativeNumberAlert(){
         alertPattern("Information", "Negative number", "Value cannot be negative number.");
     }
