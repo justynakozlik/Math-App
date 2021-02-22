@@ -17,7 +17,7 @@ public class CountAlerts {
     }
 
     public void createQuadraticEquationWrongAValueAlert(){
-        alertPattern("Information", "Wrong \"a\" parameter value","Parameter \"a\" cannot be equal zero +\nEnter a different value to count.");
+        alertPattern("Information", "Wrong \"a\" parameter value","Parameter \"a\" cannot be equal zero \nEnter a different value to count.");
     }
 
     public void createEmptyStringAlert(){
